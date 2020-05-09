@@ -1,12 +1,5 @@
-#find_package(Boost REQUIRED)
+cmake_minimum_required({{cookiecutter.cmake_min_ver}} FATAL ERROR)
 
-set(_include_dir ${CMAKE_CURRENT_SOURCE_DIR}/include)
+project({{cookiecutter.project_name}} VERSION {{cookiecutter.project_major_version}}.{{cookiecutter.project_manor_version}}.{{cookiecutter.project_manor_version}} LANGUAGES {{cookiecutter.language}})
 
-file(GLOB_RECURSE _headers RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ${_include_dir}/*.h*)
-
-add_executable(${PROJECT_NAME} ${_headers} ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
-
-target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_14)
-target_include_directories(${PROJECT_NAME} PRIVATE ${_include_dir})
-unset(_include_dir)
-target_link_libraries(${PROJECT_NAME})
+add_subdirectory(${PROJECT_SOURCE_DIR}/${PROJECT_NAME})
