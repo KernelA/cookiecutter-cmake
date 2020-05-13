@@ -3,7 +3,7 @@
     "project_slug": "{{cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "cmake_min_ver": "3.17",
     "project_major_version": "0",
-    "project_manor_version": "0",
-    "project_major_patch": "1",
-    "language": "CXX"
+    "project_minor_version": "0",
+    "project_patch_version": "1",
+    "language": ["CXX", "C", "CUDA"]
 }
