@@ -14,8 +14,10 @@ Create new directory `build`.
 
 ```
 mkdir build
-cd build
+cmake -S . -B .\build
 ```
 
 Run CMake:
-
+```
+cmake --build .\build --config Release -j 4 --target <input_target>
+```
