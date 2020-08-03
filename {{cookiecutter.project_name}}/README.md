@@ -6,7 +6,7 @@
 ## Requirements
 
 1. CMake {{cookiecutter.cmake_min_ver}} or higher.
-2. Compiler with support C++14.
+2. Compiler with support C++{{cookiecutter.cpp_standard}}.
 
 ## How to run
 

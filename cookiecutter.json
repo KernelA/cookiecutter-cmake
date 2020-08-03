@@ -5,5 +5,6 @@
     "project_major_version": "0",
     "project_minor_version": "0",
     "project_patch_version": "1",
-    "language": ["CXX", "C", "CUDA"]
+    "language": ["CXX", "C", "CUDA"],
+    "cpp_standard": ["11", "14", "17", "20"]
 }
