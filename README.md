@@ -1,3 +1,12 @@
-# Cookiecutter шаблон для CMake проектов на C++
+# Simple cookiecutter template for CMake C/C++ projects 
 
-Для создания проекта из шаблона необходимо использовать [cookiecutter](https://github.com/cookiecutter/cookiecutter).
+This template based on [cookiecutter](https://github.com/cookiecutter/cookiecutter). 
+
+## How to use
+
+Install `cookiecutter`.
+
+Run:
+```
+cookiecutter gh:KernelA/cookiecutter-cmake
+```
